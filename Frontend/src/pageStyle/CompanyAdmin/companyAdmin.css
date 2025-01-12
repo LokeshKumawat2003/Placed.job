@@ -1,0 +1,148 @@
+
+.company-admin-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.company-admin-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.company-admin-title {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.company-admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.company-admin-section label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+
+.company-admin-section input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.company-admin-section input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.languages-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.languages-input {
+  flex: 1;
+}
+
+.languages-add-btn {
+  background-color: #950295;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.languages-add-btn:hover {
+  background-color: #a50fa5;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #e0f7fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.language-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.language-remove-btn {
+  background-color: #950295;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-remove-btn:hover {
+  background-color: #860b86;
+}
+
+
+.submit-btn-action {
+  background-color: #950295;
+  color: white;
+  border: none;
+  padding: 11px 9px;
+  border-radius: 5px;
+  font-size: .81rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.submit-btn-action:hover {
+  background-color: #900d90;
+}
+
+@media (max-width: 768px) {
+  .company-admin-container {
+    padding: 15px;
+  }
+
+  .company-admin-title {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn-action {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

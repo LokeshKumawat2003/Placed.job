@@ -1,0 +1,171 @@
+.profile-student-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-student-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #5e35b1; /* Deep purple for headings */
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  
+  .profile-student-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-student-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-student-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8e44ad; /* Vibrant purple for photo border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-student-details {
+    background: #f3e5f5; /* Soft lavender background for detail card */
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #d1c4e9; /* Light purple border */
+    line-height: 1.7;
+  }
+  
+  .profile-student-details p {
+    font-size: 1rem;
+    color: #4527a0; /* Rich purple for text */
+    margin: 8px 0;
+  }
+  
+  .profile-student-details strong {
+    color: #311b92; /* Darker purple for emphasis */
+  }
+  
+  .profile-student-details a {
+    color: #7e57c2; /* Medium purple for links */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .profile-student-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .profile-student-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .profile-student-edit-button,
+  .profile-student-logout-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-student-edit-button {
+    background-color: #7e57c2; /* Medium purple */
+    color: white;
+  }
+  
+  .profile-student-edit-button:hover {
+    background-color: #5e35b1; /* Darker shade on hover */
+  }
+  
+  .profile-student-logout-button {
+    background-color: #d32f2f; /* Red for destructive action */
+    color: white;
+  }
+  
+  .profile-student-logout-button:hover {
+    background-color: #b71c1c; /* Darker red */
+  }
+  
+  .profile-student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-student-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-student-form-group label {
+    font-size: 0.95rem;
+    color: #4527a0; /* Rich purple for labels */
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .profile-student-form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #b39ddb; /* Light purple for input border */
+    border-radius: 6px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-student-form-group input:focus {
+    border-color: #7e57c2; /* Medium purple focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(126, 87, 194, 0.5); /* Purple glow */
+  }
+  
+  .profile-student-add-language-button {
+    align-self: flex-start;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #5e35b1; /* Deep purple for action buttons */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-student-add-language-button:hover {
+    background-color: #4527a0; /* Darker purple on hover */
+  }
+  
+  .profile-student-save-button {
+    align-self: flex-end;
+    padding: 12px 30px;
+    background-color: #7e57c2; /* Medium purple */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-student-save-button:hover {
+    background-color: #5e35b1; /* Darker shade on hover */
+  }
+  

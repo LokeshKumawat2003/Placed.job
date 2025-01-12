@@ -1,0 +1,167 @@
+.home-box {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  .hero-box {
+    width: 95%;
+    background-image: linear-gradient(167deg, #100f0f, #272759);
+    margin: auto;
+    border-radius: 15px;
+    padding: 5px 5px 25px 5px;
+  }
+  
+  .headers {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding: 47px 9px 5px 9px;
+  }
+  
+  .headers-2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #263fdf 4%, #e0e0e0 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 25px 9px 10px 9px;
+  }
+  
+  .summrey {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .paymet-page {
+    padding: 35px 8px 10px 8px;
+    text-align: center;
+  }
+  
+  .paymet-call {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 13px 54px;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    background-color: rgb(7, 7, 198);
+  }
+  
+  .paymet-call:active {
+    color: rgb(159, 171, 240);
+    background-color: rgb(10, 10, 119);
+  }
+  
+  .imga-hero img {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .product {
+    text-align: center;
+    padding: 29px 25px;
+  }
+  
+  .products {
+    text-align: center;
+    color: rgb(63, 63, 221);
+    padding: 35px 5px;
+    font-size: 1.6rem;
+  }
+  
+  .Success {
+    padding: 10px 20px;
+  }
+  
+  .Success p {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .summry-of-product p {
+    font-size: 1.1rem;
+    color: rgb(117, 119, 121);
+  }
+  
+  .product-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 5px;
+  }
+  
+  .box-type {
+    padding: 15px;
+    box-shadow: 0 0 12px 0 rgb(185, 182, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .product-text {
+    font-size: 1.1rem;
+    padding: 2px 6px 12px 1px;
+  }
+  
+  .online-mark {
+    background-color: rgba(172, 172, 234, 0.274);
+    color: blue;
+    text-align: center;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  
+  .icons {
+    font-size: 2.3rem;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .headers, .headers-2 {
+      font-size: 2rem;
+    }
+  
+    .summrey {
+      font-size: 1rem;
+    }
+  
+    .paymet-call {
+      font-size: 1rem;
+      padding: 10px 30px;
+    }
+  
+    .Success p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headers, .headers-2 {
+      font-size: 1.5rem;
+    }
+  
+    .summrey {
+      font-size: 0.9rem;
+    }
+  
+    .paymet-call {
+      font-size: 0.9rem;
+      padding: 8px 20px;
+    }
+  
+    .Success p {
+      font-size: 1.2rem;
+    }
+  
+    .product-box {
+      grid-template-columns: 1fr;
+    }
+  }
+  

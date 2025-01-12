@@ -1,0 +1,127 @@
+/* signup.css */
+
+/* General Container Styles */
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header Section */
+.signup-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a0dad; /* Purple color */
+}
+
+.signup-subtitle {
+  font-size: 1rem;
+  color: #6a0dad; /* Purple color */
+  margin-top: 5px;
+}
+
+/* Form Section */
+.signup-form-container {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-input, .form-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-input:focus, .form-select:focus {
+  border-color: #6a0dad; /* Purple color */
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+/* Signup Button */
+.form-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #4b0082; /* Darker purple color */
+}
+
+/* Additional Options */
+.additional-options {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-text {
+  color: #6a0dad; /* Purple color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-text:hover {
+  color: #4b0082; /* Darker purple color */
+}
+
+/* Footer Section */
+.signup-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-text {
+  color: #666;
+}
+
+.footer-text .link-text {
+  font-weight: bold;
+  color: #6a0dad; /* Purple color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+  }
+
+  .form-input, .form-select, .form-submit {
+    font-size: 1rem;
+  }
+}

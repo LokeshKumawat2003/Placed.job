@@ -1,0 +1,88 @@
+.interview-container {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 1100px;
+  background-color: #f9fafb;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.interview-container h1 {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.interview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.interview-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.interview-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.interview-card h2 {
+  font-size: 1.6rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.interview-card p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.interview-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: purple;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.interview-link:hover {
+  background-color: rgb(132, 11, 132);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .interview-container {
+    padding: 20px;
+  }
+
+  .interview-card {
+    padding: 20px;
+  }
+
+  .interview-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .interview-link {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,34 @@
+.success-stories {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #eeeeee;
+  }
+  
+  .success-stories h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .story-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .story-item {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  
+  .story-item p {
+    font-style: italic;
+  }
+  
+  .story-item h4 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

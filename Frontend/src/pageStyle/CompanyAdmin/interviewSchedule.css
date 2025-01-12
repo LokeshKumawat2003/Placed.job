@@ -1,0 +1,191 @@
+.interview-schedule-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Student-Interviews {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #5b5c5e;
+}
+
+.company-input {
+  margin-bottom: 20px;
+}
+
+.company-input label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.company-name {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.scheduled-meets {
+  margin-top: 30px;
+}
+
+.scheduled-meets h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #950295;
+}
+
+.student-assessments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.student-assessments-table th,
+.student-assessments-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.student-assessments-table th {
+  background-color: #950295;
+  color: white;
+}
+
+.student-assessments-table td a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.student-assessments-table td a:hover {
+  text-decoration: underline;
+}
+
+.schedule-meet-btn {
+  padding: 8px 16px;
+  background-color: #950295;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.schedule-meet-btn:disabled {
+  background-color: #950295;
+  cursor: not-allowed;
+}
+
+.date-picker-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.date-picker-container label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.date-picker-container input[type="date"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.date-picker-container button {
+  padding: 8px 16px;
+  background-color: #950295; /* Changed button color to SteelBlue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-picker-container button:hover {
+  background-color: #950295; /* Lighter blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .Student-Interviews {
+    font-size: 1.5rem;
+  }
+
+  .company-input {
+    margin-bottom: 15px;
+  }
+
+  .company-name {
+    max-width: 100%;
+  }
+
+  .scheduled-meets h3 {
+    font-size: 1.3rem;
+  }
+
+  .student-assessments-table th,
+  .student-assessments-table td {
+    padding: 8px;
+  }
+
+  .student-assessments-table td {
+    font-size: 0.9rem;
+  }
+
+  .schedule-meet-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .date-picker-container input[type="date"] {
+    padding: 6px;
+  }
+
+  .date-picker-container button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Student-Interviews {
+    font-size: 1.2rem;
+  }
+
+  .company-name {
+    max-width: 100%;
+    padding: 6px;
+  }
+
+  .student-assessments-table th,
+  .student-assessments-table td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+
+  .schedule-meet-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .date-picker-container input[type="date"] {
+    padding: 6px;
+  }
+
+  .date-picker-container button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

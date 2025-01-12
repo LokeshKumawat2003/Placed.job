@@ -1,0 +1,132 @@
+.challenges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.challenges-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.challenges-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.challenges-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.challenges-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.challenges-difficulty-tag {
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.challenges-difficulty-tag.easy {
+  background-color: #4caf50;
+}
+
+.challenges-difficulty-tag.medium {
+  background-color: #ff9800;
+}
+
+.challenges-difficulty-tag.hard {
+  background-color: #f44336;
+}
+
+.challenges-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.challenges-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.challenges-solve-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.challenges-solve-link:hover {
+  text-decoration: underline;
+}
+
+.challenges-solution-container {
+  margin-top: 15px;
+}
+
+.challenges-solution-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.challenges-solution-input:focus {
+  border-color: #b31fb3;
+  box-shadow: 0 0 5px #b31fb3;
+}
+
+.challenges-submit-button {
+  background-color: #b31fb3;
+  color: #ffffff;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.challenges-submit-button:hover {
+  background-color: #820d82;
+}
+
+.challenges-submitted-solution {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+.challenges-solution-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.challenges-solution-link:hover {
+  text-decoration: underline;
+}

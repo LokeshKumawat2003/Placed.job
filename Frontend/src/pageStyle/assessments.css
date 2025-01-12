@@ -1,0 +1,211 @@
+
+.assessments-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f4f4f7; 
+  padding: 30px;
+}
+
+.assessment-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px;
+}
+
+.assessment-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.assessment-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #6a4c9c; 
+}
+
+.company-label {
+  font-weight: 600;
+  color: #5c4d6e; 
+}
+
+.assessment-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.no-assessments-text {
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+}
+
+.assessment-item {
+  background-color: #f7f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assessment-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.company-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6a4c9c; 
+  text-align: center;
+}
+
+.company-link {
+  color: #6a4c9c;
+  text-decoration: none;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+}
+
+.assessment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.assessment-dates {
+  font-size: 16px;
+  color: #555; 
+}
+
+.date-range span {
+  font-weight: bold;
+  color: #6a4c9c; 
+}
+
+.assessment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.view-assessment-btn {
+  background-color: #6a4c9c; 
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.view-assessment-btn a{
+  color: white;
+  text-decoration: none;
+}
+.view-assessment-btn:hover {
+  background-color: #4e3a6d; 
+}
+
+.assessment-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.github-input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #c7d5e0;
+  /* width: 100%; */
+  background-color: #f7f7fa; 
+}
+
+.github-input:focus {
+  border-color: #6a4c9c; 
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #4c669c; 
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+
+.submit-btn:hover {
+  background-color: #4e3a6d; 
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 18px;
+  color: #444; 
+}
+
+@media (max-width: 768px) {
+  .assessment-box {
+    padding: 25px;
+  }
+
+  .assessment-title {
+    font-size: 32px;
+  }
+
+  .assessment-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .company-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .assessment-item {
+    padding: 20px;
+  }
+
+  .assessment-dates {
+    font-size: 14px;
+  }
+
+  .github-input, .submit-btn {
+    font-size: 14px;
+  }
+}

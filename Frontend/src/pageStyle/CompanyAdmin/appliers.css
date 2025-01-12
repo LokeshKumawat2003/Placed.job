@@ -1,0 +1,155 @@
+/* appliers.css */
+
+.appliers-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appliers-header {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.appliers-table-container {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.appliers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appliers-table th,
+.appliers-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.appliers-table th {
+  background-color: purple;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.appliers-table tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+
+.appliers-table tr:hover {
+  background-color: #eef3fc;
+}
+
+.appliers-table td {
+  color: #555;
+}
+
+.appliers-table a {
+  color: purple;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.appliers-table a:hover {
+  color: purple;
+}
+
+.assessment-input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.assessment-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.assessment-input:focus {
+  border-color: purple;
+  outline: none;
+}
+
+.assessment-submit-btn {
+  padding: 10px 20px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.assessment-submit-btn:hover {
+  background-color: purple;
+  transform: scale(1.05);
+}
+
+.assessment-submit-btn:active {
+  background-color: #003366;
+  transform: scale(1);
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  margin: 0;
+  transform: scale(1.4);
+  accent-color: purple;
+}
+
+.send-assessment-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: purple;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.send-assessment-btn:hover {
+  background-color: purple;
+  transform: scale(1.05);
+}
+
+.send-assessment-btn:active {
+  background-color: #003366;
+  transform: scale(1);
+}
+
+.send-assessment-btn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  transform: scale(1);
+}
