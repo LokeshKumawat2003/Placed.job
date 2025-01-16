@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useUrl } from "../context/UrlContext";
+import Loader from "../Components/Loader";
 
 const ProfileStudent = () => {
   const { url } = useUrl();
@@ -19,17 +20,18 @@ const ProfileStudent = () => {
   });
   const [isEditing, setIsEditing] = useState(false);
   const [profileExists, setProfileExists] = useState(false);
-
+const [loadding,setLoading]=useState(false)
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
 
   useEffect(() => {
     const fetchProfile = async () => {
+      setLoading(true)
       try {
         const response = await axios.get(`${url}/api/profile`, {
           headers: { Authorization: `Bearer ${token}` },
         });
-        
+        setLoading(false)
         if (response.data) {
           setProfile(response.data);
           setProfileExists(true);
@@ -109,7 +111,7 @@ const ProfileStudent = () => {
                 alt="Profile"
               />
             </div>
-            <div className="profile-student-details">
+      {loadding? <Loader/> :      <div className="profile-student-details">
               <p><strong>Full Name:</strong> {profile.fullName}</p>
               <p><strong>Address:</strong> {profile.address}</p>
               <p><strong>Qualification:</strong> {profile.qualification}</p>
@@ -117,7 +119,7 @@ const ProfileStudent = () => {
               <p><strong>Languages:</strong> {profile.languages.join(", ")}</p>
               <p><strong>Resume:</strong> <a href={profile.resumeLink} target="_blank" rel="noopener noreferrer">View Resume</a></p>
               <p><strong>GitHub:</strong> <a href={profile.githubLink} target="_blank" rel="noopener noreferrer">{profile.githubLink}</a></p>
-            </div>
+            </div>}
             <div className="profile-student-actions">
               <button onClick={toggleEdit} className="profile-student-edit-button">Edit Profile</button>
               <button
