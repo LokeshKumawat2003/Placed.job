@@ -1,6 +1,6 @@
 # Placed.Job - Job Portal for Job Applications, Assessments, and Interviews
 ## App Demo link
-[Placed.Job Live App](https://jocular-medovik-69cd7e.netlify.app/)
+[Placed.Job Live App](https://tiny-brigadeiros-2774b1.netlify.app/)
 ## Overview
 
 Placed.Job is a job portal platform designed for both job seekers and employers. It allows users to apply for jobs, complete skill assessments, and attend interviews in one seamless process. The application connects job seekers with employers, offering them an efficient way to manage job applications and assessments. For employers, it provides tools to review candidates, assess their skills, and schedule interviews.
